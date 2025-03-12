@@ -97,6 +97,7 @@ article p{
     flex-wrap: wrap;
     justify-content: center;
     gap: 100px;
+    align-items: stretch;
 }
 .skill-list img{
     width: 300px;
@@ -113,17 +114,25 @@ article p{
 }
 table{
     width: 100%;
+    border-collapse: collapse;
 }
 th, td{
     padding: 10px;
     text-align: center;
     font-size: 16px;
     line-height: 26px;
+    border: 2px solid #fff;
+    border-top: none;
 }
 th{
+    border-bottom: none;
     background: #6ba7eb;
-    color: #fff;
-    border-left: 2px solid #fff;
+}
+td:first-child, th:first-child {
+    border-left: none;
+}
+td:last-child, th:last-child {
+    border-right: none;
 }
 td:first-child{
     font-weight: bold;
