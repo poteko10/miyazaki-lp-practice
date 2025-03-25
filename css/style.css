@@ -236,6 +236,9 @@ footer p{
   
 
 @media (max-width: 1199px) {
+    .inner{
+        max-width: 96%;
+    }
     .keyvisual {
         padding-top: 250px;
         padding-bottom: 250px;
@@ -252,8 +255,6 @@ footer p{
         position: relative;
     }
     .news .inner img{
-        width: 20%;
-        height: auto;
         margin-bottom: 75px;
     }
     .news article {
