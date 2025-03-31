@@ -28,6 +28,7 @@ header .inner{
     padding: 10px 15px;
     border-radius: 5px;
     transition: color 0.3s;
+    align-self: flex-start;
 }
 .contact-btn:hover{
     color: #333;
@@ -41,24 +42,26 @@ header .inner{
 }
 .keyvisual h1{
     font-size: 65px;
-    font-weight: 700px;
+    font-weight: 700;
     color: #6ba7eb;
     margin-bottom: 30px;
 }
 .keyvisual p{
     font-size: 40px;
-    font-weight: 700px;
+    font-weight: 700;
 }
 
 .news, .skills, .plan{
     background: #e3f2fd;
-    padding: 50px;
     text-align: center;
 }
 h2{
     font-size: 40px;
     letter-spacing: 10px;
-    margin-bottom: 35px;
+}
+
+.news{
+    padding:20px;
 }
 article img{
     width: 250px;
@@ -66,8 +69,7 @@ article img{
 article p{
     font-size: 15px;
     line-height: 18px;
-    word-break: break-word;
-    margin-top: 20px;
+    word-break: break-all;
 }
 .news .inner{
     display: flex;
@@ -78,12 +80,13 @@ article p{
 }
 .news h2{
     text-align: center;
+    padding-bottom: 35px;
 }
 .news img{
-    width: 40%;
+    width: 250px;
     height: auto;
     position: relative;
-    top: 50px;
+    top: 20px;
 }
 .news article{
     width: 60%;
@@ -91,6 +94,11 @@ article p{
 
 .skills{
     background: #fff;
+    margin-bottom: 50px;
+}
+.skills h2{
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 .skill-list{
     display: flex;
@@ -111,6 +119,10 @@ article p{
 
 .plan{
     background: #d0dfea;
+    padding-bottom: 50px;
+}
+.plan h2{
+    padding: 50px;
 }
 table{
     width: 100%;
@@ -151,7 +163,6 @@ tbody tr:nth-child(odd){
 }
 nav ul li a{
     text-decoration: none;
-    color: #333;
 }
 .social-links{
     display: flex;
@@ -159,10 +170,15 @@ nav ul li a{
     gap: 80px;
 }
 .social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 40px;
     color: #8c8c8c;
     width: 185px;
-    padding: 25px;
+    height: 90px;
+    font-size: 40px;
+    overflow: hidden;
     transition: background 0.5s;
 }
 .social-links a:hover{
@@ -177,7 +193,8 @@ footer{
     letter-spacing: 0.5px;
 }
 footer p{
-    float: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -237,7 +254,7 @@ footer p{
 
 @media (max-width: 1199px) {
     .inner{
-        max-width: 96%;
+        max-width: 97%;
     }
     .keyvisual {
         padding-top: 250px;
@@ -245,8 +262,7 @@ footer p{
     }
     
     .news {
-        padding-top: 0;
-        padding-bottom: 50px;
+        padding: 50px;
     }
     .news .inner {
         display: block;
@@ -273,6 +289,9 @@ footer p{
     }
     .skill-list li:last-child{
         margin-bottom: 0;
+    }
+    .social-links a{
+        width: 125px;
     }
 }
 
@@ -327,27 +346,28 @@ footer p{
 
     .sns {
         padding: 50px 15px;
+        width: 100%;
+        text-align: center;
     }
     .social-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 0;
+    }
+    .social-links li{
+        width: 100%;
+        list-style: none;
         display: block;
-    }
-    .social-links li {
-        margin-bottom: 50px;
-    }
-    .social-links li:last-child {
-        margin-bottom: 0;
+        text-align: center;
     }
     .social-links a {
-        display: inline-block;
-        padding: 25px;
-    }
-    .fa-facebook-f {
-        margin-top: 50px;
-    }
-    .fa-envelope {
-        margin-bottom: 50px;
-    }
-    .social-links a:hover {
-        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 185px;
+        height: 90px;
     }
 }
