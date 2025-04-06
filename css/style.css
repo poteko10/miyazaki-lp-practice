@@ -29,6 +29,7 @@ header .inner{
     border-radius: 5px;
     transition: color 0.3s;
     align-self: flex-start;
+    text-decoration: none;
 }
 .contact-btn:hover{
     color: #333;
@@ -281,9 +282,12 @@ footer p{
         display: block;
     }
     .skill-list {
-    display: block;
+    display: inline-block;
     text-align: center;
     }
+    .skill-list img {
+        display: block;
+      }
     .skill-list li:nth-child(3n) {
         margin-bottom: 80px;
     }
