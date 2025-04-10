@@ -329,10 +329,10 @@ footer p{
         padding-top: 200px;
         padding-bottom: 200px;
     }
-    .keyvisual .main-title {
+    .keyvisual h1 {
         font-size: 40px;
     }
-    .keyvisual .sub-title {
+    .keyvisual p {
         font-size: 30px;
     }
 
