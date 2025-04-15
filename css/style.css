@@ -40,16 +40,15 @@ header .inner{
     text-align: center;
     padding: 400px 0;
     color: #fff;
+    font-weight: 700;
 }
 .keyvisual h1{
     font-size: 65px;
-    font-weight: 700;
     color: #6ba7eb;
     margin-bottom: 30px;
 }
 .keyvisual p{
     font-size: 40px;
-    font-weight: 700;
 }
 
 .news, .skills, .plan{
@@ -178,7 +177,6 @@ nav ul li a{
     color: #8c8c8c;
     width: 185px;
     height: 90px;
-    font-size: 40px;
     overflow: hidden;
     transition: background 0.5s;
 }
@@ -207,19 +205,19 @@ footer p{
     justify-content: space-between;
     cursor: pointer;
     position: relative;
-  }
-  
-  .hamburger-menu span {
+}
+
+.hamburger-menu span {
     display: block;
     height: 5px;
     width: 100%;
     background: #333;
     border-radius: 3px;
     transition: 0.3s;
-  }
+}
   
   
-  .nav-menu {
+.nav-menu {
     display: none; 
     position: absolute;
     top: 60px;
@@ -228,29 +226,29 @@ footer p{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 200px;
     border-radius: 5px;
-  }
+}
   
-  .nav-menu ul {
+.nav-menu ul {
     list-style: none;
     padding: 10px 0;
-  }
+}
   
-  .nav-menu li {
+.nav-menu li {
     text-align: center;
     padding: 10px 0;
-  }
+}
   
-  .nav-menu a {
+.nav-menu a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
     display: block;
     transition: 0.3s;
-  }
+}
   
-  .nav-menu a:hover {
+.nav-menu a:hover {
     background: #f0f0f0;
-  }
+}
   
 
 @media (max-width: 1199px) {
@@ -307,20 +305,20 @@ footer p{
     .hamburger-menu {
         display: flex;
       }
-      .nav-menu.active {
+    .nav-menu.active {
         display: block;
       }
-      .nav-menu {
+    .nav-menu {
         width: 100%; 
         top: 60px;
         right: 0;
       }
     
-      .nav-menu ul {
+    .nav-menu ul {
         padding: 0; 
       }
     
-      .nav-menu li {
+    .nav-menu li {
         padding: 10px;
       }
     
