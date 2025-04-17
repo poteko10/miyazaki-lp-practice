@@ -256,8 +256,7 @@ footer p{
         max-width: 97%;
     }
     .keyvisual {
-        padding-top: 250px;
-        padding-bottom: 250px;
+        padding: 250px 0;
     }
     
     .news {
@@ -305,15 +304,7 @@ footer p{
     .hamburger-menu {
         display: flex;
       }
-    .nav-menu.active {
-        display: block;
-      }
-    .nav-menu {
-        width: 100%; 
-        top: 60px;
-        right: 0;
-      }
-    
+
     .nav-menu ul {
         padding: 0; 
       }
@@ -324,8 +315,7 @@ footer p{
     
 
     .keyvisual {
-        padding-top: 200px;
-        padding-bottom: 200px;
+        padding: 200px 0;
     }
     .keyvisual h1 {
         font-size: 40px;
@@ -352,7 +342,6 @@ footer p{
         text-align: center;
     }
     .social-links {
-        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 50px;
@@ -365,11 +354,7 @@ footer p{
         text-align: center;
     }
     .social-links a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin: 0 auto;
         width: 185px;
-        height: 90px;
     }
 }
